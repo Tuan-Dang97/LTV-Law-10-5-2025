@@ -6,1197 +6,674 @@
 }
 
 body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.index-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.index-container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.index-right-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.index-right-bottom {
-  display: flex;
-  gap: 20px;
-  height: 260px;
-}
-
-/* Các khối chứa hình ảnh */
-.index-left-block,
-.index-right-top,
-.index-bottom-block {
-  position: relative;
-  overflow: hidden;
-  background-color: #4a7ade;
-}
-
-.index-left-block {
-  flex: 1;
-  height: 500px;
-  border: 2px solid #000;
-}
-
-.index-right-top {
-  height: 220px;
-  border: 2px solid #000;
-}
-
-.index-bottom-block {
-  flex: 1;
-  border: 2px solid #000;
-}
-
-/* Style cho hình ảnh */
-.index-block-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Phần mô tả ở dưới cùng mỗi khối */
-.index-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 51, 102, 0.9);
-  color: white;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: left;
-  z-index: 1;
-}
-
-/* Phần mô tả ở dưới cùng mỗi khối */
-.index-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 51, 102, 0.9);
-  color: white;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: left;
-  z-index: 1;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-/* Top Bar */
-.top-bar {
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 8px 0;
-  font-size: 14px;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.contact-info span {
-  margin-left: 20px;
-}
-
-.contact-info i {
-  margin-right: 5px;
-}
-
-/* Header */
-.header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 100;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.main-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav li {
-  margin-left: 20px;
-  position: relative;
-}
-
-.main-nav a {
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #1e73be; /* Màu xanh da trời khi hover */
-}
-
-.language img {
-  width: 20px;
-  height: auto;
-  margin-left: 5px;
-}
-
-/* Hero Banner */
-.hero-banner {
-  position: relative;
-  height: 600px;
-  background-image: url("../images/banner.jpg"); /* Cần thay thế bằng ảnh thật */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.banner-content {
-  position: relative;
-  z-index: 10;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.banner-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #1e73be; /* Màu xanh da trời */
-}
-
-.banner-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-contact {
-  display: inline-block;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.btn-contact:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-}
-
-/* Phần giới thiệu công ty */
-.about-company {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-subtitle {
-  color: #1e73be;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  position: relative;
-  padding-left: 40px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.about-subtitle:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #1e73be;
-}
-
-.about-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  color: #333;
-}
-
-.about-text p {
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.btn-about {
-  display: inline-block;
-  background-color: #1e73be;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-about:hover {
-  background-color: #155fa1;
-  transform: translateY(-3px);
-}
-
-.about-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.experience-badge {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 120px;
-  height: 120px;
-  background-color: #555;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
-.experience-badge .years {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.experience-badge .text {
-  font-size: 12px;
-  max-width: 80px;
-  line-height: 1.2;
-  margin-top: 5px;
-}
-
-/* Dịch vụ "Chúng tôi cung cấp những gì" */
-.services {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  color: #1e73be; /* Màu xanh da trời */
-  margin-bottom: 15px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: #1e73be; /* Màu xanh da trời */
-}
-
-.section-title p {
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.3s;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-icon {
-  color: #1e73be; /* Màu xanh da trời */
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.service-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  font-size: 12px;
-}
-
-.service-corner i {
-  position: relative;
-  left: 5px;
-  top: 5px;
-}
-
-/* Phần đăng ký bản tin */
-.newsletter-signup {
-  padding: 0;
-  margin: 60px 0;
-}
-
-.newsletter-content {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #1e73be, #4a8cca);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.newsletter-image {
-  flex: 1;
-  max-width: 40%;
-  position: relative;
-}
-
-.newsletter-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.newsletter-text {
-  flex: 1;
-  padding: 50px;
-  color: #fff;
-  text-align: left;
-}
-
-.newsletter-text h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-signup {
-  display: inline-block;
-  background-color: #fff;
-  color: #1e73be;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-signup i {
-  margin-left: 8px;
-}
-
-.btn-signup:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Chuyên gia */
-.experts {
-  padding: 80px 0;
-}
-
-.experts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.expert-item {
-  background-color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.expert-image img {
-  width: 100%;
-  height: auto;
-}
-
-.expert-item h3 {
-  margin: 20px 0 5px;
-  font-size: 20px;
-}
-
-.expert-item p {
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.expert-contact {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.expert-contact a {
-  margin: 0 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-}
-
-.expert-contact a:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-} /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section Blog và Dịch vụ Styles */
+
+.blog-services {
+  padding: 40px 0;
+  background-color: #f8f9fa;
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.blog-services-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 30px;
+  align-items: start;
 }
 
-ul {
-  list-style: none;
-}
-
-/* Top Bar */
-.top-bar {
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 8px 0;
-  font-size: 14px;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.contact-info span {
-  margin-left: 20px;
-}
-
-.contact-info i {
-  margin-right: 5px;
-}
-
-/* Header */
-.header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 100;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.main-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav li {
-  margin-left: 20px;
-  position: relative;
-}
-
-.main-nav a {
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #1e73be; /* Màu xanh da trời khi hover */
-}
-
-.language img {
-  width: 20px;
-  height: auto;
-  margin-left: 5px;
-}
-
-/* Hero Banner */
-.hero-banner {
-  position: relative;
-  height: 600px;
-  background-image: url("../images/banner.jpg"); /* Cần thay thế bằng ảnh thật */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.banner-content {
-  position: relative;
-  z-index: 10;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.banner-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #1e73be; /* Màu xanh da trời */
-}
-
-.banner-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-contact {
-  display: inline-block;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.btn-contact:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-}
-
-/* Phần giới thiệu công ty */
-.about-company {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-subtitle {
-  color: #1e73be;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  position: relative;
-  padding-left: 40px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.about-subtitle:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #1e73be;
-}
-
-.about-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  color: #333;
-}
-
-.about-text p {
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.btn-about {
-  display: inline-block;
-  background-color: #1e73be;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-about:hover {
-  background-color: #155fa1;
-  transform: translateY(-3px);
-}
-
-.about-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.experience-badge {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 120px;
-  height: 120px;
-  background-color: #555;
-  border-radius: 50%;
+.blog-column,
+.services-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
-.experience-badge .years {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.experience-badge .text {
-  font-size: 12px;
-  max-width: 80px;
-  line-height: 1.2;
-  margin-top: 5px;
-}
-
-/* Dịch vụ "Chúng tôi cung cấp những gì" */
-.services {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  color: #1e73be; /* Màu xanh da trời */
-  margin-bottom: 15px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: #1e73be; /* Màu xanh da trời */
-}
-
-.section-title p {
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.3s;
-  position: relative;
-  overflow: hidden;
+  gap: 25px;
   height: 100%;
 }
 
-.service-card:hover {
+.service-main {
+  /* ...các thuộc tính khác... */
+  flex: 0 0 auto; /* Không co giãn, giữ kích thước tự nhiên */
+}
+
+.service-extras {
+  /* ...các thuộc tính khác... */
+  flex: 1; /* Chiếm hết không gian còn lại */
+  min-height: 170px; /* Đảm bảo có chiều cao tối thiểu */
+}
+
+.service-extra {
+  /* ...các thuộc tính khác... */
+  height: 100%; /* Sử dụng 100% chiều cao của container cha */
+}
+
+@media (max-width: 768px) {
+  /* ...các thuộc tính khác... */
+  .service-extras {
+    min-height: auto; /* Bỏ min-height trên mobile */
+  }
+
+  .service-extra {
+    height: 170px; /* Đặt chiều cao cố định cho mobile */
+  }
+}
+
+.post-list {
+  /* ...các thuộc tính khác... */
+  flex-grow: 1; /* Để phần này tự động điều chỉnh cao hơn */
+}
+
+.featured-post,
+.service-main {
+  /* ...các thuộc tính khác... */
+  flex-shrink: 0; /* Ngăn không cho phần này co lại */
+}
+
+.service-extras {
+  /* ...các thuộc tính khác... */
+  flex-grow: 1; /* Để phần này tự động điều chỉnh cao hơn */
+}
+
+.blog-column,
+.services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+}
+
+/* Header styles */
+.column-header {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.column-header h2 {
+  display: inline-block;
+  background-color: #4ba3da;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.column-header:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: -1px;
+  position: relative;
+  z-index: -1;
+}
+
+/* Blog Column Styles */
+.blog-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Featured Post */
+.featured-post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featured-post:hover {
   transform: translateY(-5px);
 }
 
-.service-icon {
-  color: #1e73be; /* Màu xanh da trời */
-  font-size: 40px;
-  margin-bottom: 20px;
+.featured-image {
+  height: 300px;
+  overflow: hidden;
 }
 
-.service-card h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.service-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  font-size: 12px;
-}
-
-.service-corner i {
-  position: relative;
-  left: 5px;
-  top: 5px;
-}
-
-/* Phần bài viết liên quan */
-.related-posts {
-  padding: 80px 0 40px;
-  background-color: #f9f9f9;
-}
-
-.posts-slider {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  overflow-x: hidden;
-  padding: 10px 0 30px;
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.post-card {
-  flex: 0 0 calc(25% - 15px);
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+.featured-post:hover .featured-image img {
+  transform: scale(1.05);
 }
 
-.post-card:hover {
-  transform: translateY(-5px);
+.featured-content {
+  padding: 20px;
+}
+
+.featured-content h3 {
+  color: #2264a7;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.featured-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Post List */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.post-item {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-3px);
 }
 
 .post-image {
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
   overflow: hidden;
 }
 
 .post-image img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
 }
 
-.post-card:hover .post-image img {
-  transform: scale(1.05);
+.post-item:hover .post-image img {
+  transform: scale(1.1);
 }
 
 .post-content {
-  padding: 20px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-content h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-  line-height: 1.4;
+.post-content h4 {
+  color: #333;
+  font-size: 14px;
   font-weight: 600;
-  height: 65px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
 }
 
-.post-navigation {
-  position: absolute;
-  top: -60px;
-  right: 0;
+.post-content time {
+  color: #888;
+  font-size: 12px;
+  display: block;
+}
+
+/* Services Column Styles */
+.services-column {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.nav-prev,
-.nav-next {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.nav-prev:hover,
-.nav-next:hover {
-  background-color: #1e73be;
-  color: #fff;
-  border-color: #1e73be;
-}
-
-/* Phần tin tức pháp lý */
-.legal-news {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.news-card {
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 8px;
+/* Main Service */
+.service-main {
+  position: relative;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  height: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.news-card:hover {
-  transform: translateY(-5px);
-}
-
-.news-image {
-  overflow: hidden;
-}
-
-.news-image img {
+.service-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
 }
 
-.news-card:hover .news-image img {
+.service-main:hover .service-image {
   transform: scale(1.05);
 }
 
-.news-content {
-  padding: 20px;
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 51, 102, 0.9)
+  );
+  padding: 30px 15px 15px;
 }
 
-.news-content h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-  line-height: 1.4;
+.service-overlay h3 {
+  color: white;
+  font-size: 18px;
   font-weight: 600;
-  height: 65px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-} /* Phần đăng ký bản tin */
-.newsletter-signup {
-  padding: 0;
-  margin: 60px 0;
+  margin: 0;
 }
 
-.newsletter-content {
+/* Service Extras */
+.service-extras {
   display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #1e73be, #4a8cca);
-  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.c {
+  flex: 1;
+  position: relative;
+  border-radius: 5px;
   overflow: hidden;
-  position: relative;
+  height: 170px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter-image {
-  flex: 1;
-  max-width: 40%;
-  position: relative;
+.service-extra img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.newsletter-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.service-extra:hover img {
+  transform: scale(1.05);
 }
 
-.newsletter-text {
-  flex: 1;
-  padding: 50px;
-  color: #fff;
-  text-align: left;
+.blog-services {
+  padding: 40px 0;
+  background-color: #f8f9fa;
 }
 
-.newsletter-text h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.btn-signup {
-  display: inline-block;
-  background-color: #fff;
-  color: #1e73be;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-signup i {
-  margin-left: 8px;
-}
-
-.btn-signup:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Chuyên gia */
-.experts {
-  padding: 80px 0;
-}
-
-.experts-grid {
+.blog-services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 70% 30%;
   gap: 30px;
 }
 
-.expert-item {
-  background-color: #fff;
+/* Header styles */
+.column-header {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.column-header h2 {
+  display: inline-block;
+  background-color: #4ba3da;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.column-header:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: -1px;
+  position: relative;
+  z-index: -1;
+}
+
+/* Blog Column Styles */
+.blog-column,
+.services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+}
+
+/* Featured Post */
+.featured-post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 0 0 auto; /* Không co giãn, giữ kích thước tự nhiên */
 }
 
-.expert-image img {
+.featured-post:hover {
+  transform: translateY(-5px);
+}
+
+.featured-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.featured-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.expert-item h3 {
-  margin: 20px 0 5px;
+.featured-post:hover .featured-image img {
+  transform: scale(1.05);
+}
+
+.featured-content {
+  padding: 20px;
+}
+
+.featured-content h3 {
+  color: #2264a7;
   font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.expert-item p {
+.featured-content p {
   color: #666;
-  margin-bottom: 15px;
-}
-
-.expert-contact {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.expert-contact a {
-  margin: 0 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-}
-
-.expert-contact a:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-} /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Post List */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1; /* Chiếm hết không gian còn lại */
+}
+
+.post-item {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-3px);
+}
+
+.post-image {
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.post-item:hover .post-image img {
+  transform: scale(1.1);
+}
+
+.post-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-content h4 {
   color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.post-content time {
+  color: #888;
+  font-size: 12px;
+  display: block;
+}
+
+/* Services Column Calculations */
+.services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+}
+
+/* Main Service */
+.service-main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto; /* Không co giãn, giữ kích thước tự nhiên */
+  background-color: white;
+}
+
+.service-image-container {
+  height: 220px; /* Giảm chiều cao của ảnh */
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-main:hover .service-image {
+  transform: scale(1.05);
+}
+
+.service-content {
+  padding: 15px;
+  background-color: white;
+}
+
+.service-content h3 {
+  color: #2264a7;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Service Extras */
+.service-extras {
+  display: flex;
+  gap: 20px;
+  flex: 1; /* Chiếm hết không gian còn lại */
+  min-height: 170px; /* Đảm bảo có chiều cao tối thiểu */
+}
+
+.service-extra {
+  flex: 1;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%; /* Sử dụng 100% chiều cao của container cha */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-extra img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-extra:hover img {
+  transform: scale(1.05);
+}
+
+.service-extra-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 51, 102, 0.9)
+  );
+  padding: 30px 10px 10px;
+}
+
+.service-extra-content h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .blog-services-grid {
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-extras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: auto; /* Bỏ min-height trên mobile */
+  }
+
+  .service-extra {
+    height: 170px; /* Đặt chiều cao cố định cho mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-extras {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-image {
+    height: 200px;
+  }
+
+  .post-image {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+
+  .post-content h4 {
+    font-size: 13px;
+  }
+
+  .featured-content h3 {
+    font-size: 18px;
+  }
+}
+
+.service-extra-content {
+}
+
+.service-extra-content h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .blog-services-grid {
+    grid-template-columns: 65% 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-extras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-extras {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-image {
+    height: 200px;
+  }
+
+  .post-image {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+
+  .post-content h4 {
+    font-size: 13px;
+  }
+
+  .featured-content h3 {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -1215,9 +692,10 @@ ul {
   list-style: none;
 }
 
+/* ===== HEADER ===== */
 /* Top Bar */
 .top-bar {
-  background-color: #1e73be; /* Màu xanh da trời */
+  background-color: #1e73be;
   color: #fff;
   padding: 8px 0;
   font-size: 14px;
@@ -1227,6 +705,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-style: normal;
 }
 
 .contact-info span {
@@ -1237,15 +716,15 @@ ul {
   margin-right: 5px;
 }
 
-/* Header */
-.header {
+/* Main Header */
+.main-header {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 100;
 }
 
-.header .container {
+.main-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1275,7 +754,11 @@ ul {
 }
 
 .main-nav a:hover {
-  color: #1e73be; /* Màu xanh da trời khi hover */
+  color: #1e73be;
+}
+
+.language {
+  display: flex;
 }
 
 .language img {
@@ -1284,273 +767,371 @@ ul {
   margin-left: 5px;
 }
 
-/* Hero Banner */
-.hero-banner {
-  position: relative;
-  height: 600px;
-  background-image: url("../images/banner.jpg"); /* Cần thay thế bằng ảnh thật */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+/* ===== SERVICE BANNERS ===== */
+.service-banners {
+  padding: 20px 0;
 }
 
-.overlay {
+.banner-grid {
+  display: flex;
+  gap: 20px;
+}
+
+/* Banner Main */
+.banner-main {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: #4a7ade;
+}
+
+.banner-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner Sidebar */
+.banner-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-sidebar-top {
+  height: 300px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  background-color: #4a7ade;
+}
+
+.banner-sidebar-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-sidebar-bottom {
+  display: flex;
+  gap: 20px;
+  height: 180px;
+}
+
+.banner-small {
+  flex: 1;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+  background-color: #4a7ade;
+}
+
+.banner-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 51, 102, 0.9);
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  z-index: 1;
+}
+
+.service-list {
+  padding: 30px 0;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  display: inline-block;
+  background-color: #4ba3da;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 25px;
+  margin: 0;
+  position: relative;
+}
+
+.section-header:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #e9ecef;
+  position: relative;
+  top: -2px;
+  width: 100%;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-content h3 {
+  color: #2264a7;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-content h3 {
+    font-size: 14px;
+  }
+
+  .service-content {
+    padding: 15px;
+  }
+
+  .section-header h2 {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+.service-card:hover .service-content h3 {
+  color: #1e73be;
+}
+
+.service-link {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.banner-content {
-  position: relative;
-  z-index: 10;
-  max-width: 800px;
-  margin: 0 auto;
+/* ===== CONTENT SECTION ===== */
+.content-section {
+  padding: 20px 0;
 }
 
-.banner-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #1e73be; /* Màu xanh da trời */
+.content-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 30px;
 }
 
-.banner-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-contact {
-  display: inline-block;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.btn-contact:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-}
-
-/* Phần giới thiệu công ty */
-.about-company {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-subtitle {
-  color: #1e73be;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  position: relative;
-  padding-left: 40px;
-  display: inline-block;
+/* Section Header */
+.section-header {
+  background-color: #4ba3da;
+  padding: 10px 20px;
   margin-bottom: 20px;
 }
 
-.about-subtitle:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #1e73be;
+.section-header h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
 }
 
-.about-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  color: #333;
-}
-
-.about-text p {
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.btn-about {
-  display: inline-block;
-  background-color: #1e73be;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-about:hover {
-  background-color: #155fa1;
-  transform: translateY(-3px);
-}
-
-.about-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.experience-badge {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 120px;
-  height: 120px;
-  background-color: #555;
-  border-radius: 50%;
+/* Main Content */
+.main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
-.experience-badge .years {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.experience-badge .text {
-  font-size: 12px;
-  max-width: 80px;
-  line-height: 1.2;
-  margin-top: 5px;
-}
-
-/* Dịch vụ "Chúng tôi cung cấp những gì" */
-.services {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  color: #1e73be; /* Màu xanh da trời */
-  margin-bottom: 15px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: #1e73be; /* Màu xanh da trời */
-}
-
-.section-title p {
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.service-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.3s;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-icon {
-  color: #1e73be; /* Màu xanh da trời */
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.service-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  width: 30px;
-  height: 30px;
+/* Featured Articles */
+.featured-articles {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  gap: 20px;
+}
+
+.featured-article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+}
+
+.article-content {
+  padding: 15px;
+}
+
+.article-content h3 {
+  color: #2264a7;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.article-content p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Article List */
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.article-card {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.article-thumbnail {
+  width: 120px;
+  min-width: 120px;
+  overflow: hidden;
+}
+
+.article-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-card-content h4 {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.article-date {
+  color: #777;
   font-size: 12px;
 }
 
-.service-corner i {
-  position: relative;
-  left: 5px;
-  top: 5px;
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Footer */
+.sidebar-feature {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sidebar-feature-image {
+  flex: 0 0 30%;
+  max-width: 30%;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.sidebar-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-feature-content {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-feature-content h3 {
+  color: #2264a7;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
 .footer {
-  background-color: #1e73be; /* Màu xanh da trời */
+  background-color: #1e73be;
   color: #fff;
   padding: 60px 0 0;
+  margin-top: 40px;
 }
 
 .footer-content {
@@ -1589,6 +1170,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-style: normal;
 }
 
 .footer-contact p {
@@ -1632,7 +1214,7 @@ ul {
 
 .btn-submit {
   background-color: #fff;
-  color: #1e73be; /* Màu xanh da trời */
+  color: #1e73be;
   border: none;
   padding: 10px 20px;
   border-radius: 0 4px 4px 0;
@@ -1649,14 +1231,13 @@ ul {
 }
 
 .social-links a {
-  display: inline-block;
+  display: inline-flex;
   width: 35px;
   height: 35px;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   border-radius: 50%;
   margin-left: 10px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
@@ -1664,103 +1245,77 @@ ul {
 
 .social-links a:hover {
   background-color: #fff;
-  color: #1e73be; /* Màu xanh da trời */
+  color: #1e73be;
 }
 
-/* Responsive */
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .services-grid {
+  .footer-content {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .experts-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-text,
-  .about-image {
-    width: 100%;
-  }
-
-  .newsletter-content {
-    flex-direction: column;
-  }
-
-  .newsletter-image {
-    max-width: 100%;
-  }
-
-  .newsletter-text {
-    padding: 30px;
-    text-align: center;
-  }
-
-  .post-card {
-    flex: 0 0 calc(33.33% - 14px);
-  }
-
-  .news-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .footer-newsletter {
+    grid-column: span 2;
   }
 }
 
 @media (max-width: 768px) {
-  .index-container {
+  .banner-grid {
     flex-direction: column;
   }
 
-  .index-left-block {
+  .banner-main {
     height: 300px;
   }
 
-  .index-right-bottom {
-    height: auto;
+  .content-grid {
+    grid-template-columns: 1fr;
   }
 
-  .index-bottom-block {
-    height: 200px;
-  }
-
-  .header .container {
+  .featured-articles {
     flex-direction: column;
   }
 
-  .index-container {
-    flex-direction: column; /* Chuyển sang layout dọc trên màn hình nhỏ */
+  .sidebar-feature {
+    flex-direction: column;
   }
 
-  .index-left-block {
-    height: 300px; /* Giảm chiều cao trên màn hình nhỏ */
-  }
-
-  .index-right-top {
+  .sidebar-feature-image {
+    max-width: 100%;
     height: 200px;
   }
 
-  .index-right-bottom {
-    height: auto;
+  .article-list {
+    grid-template-columns: 1fr;
   }
 
-  .index-bottom-block {
-    height: 200px;
+  .main-header .container {
+    flex-direction: column;
   }
 
-  .index-description {
-    font-size: 12px; /* Thu nhỏ font chữ */
-    padding: 8px 10px;
+  .logo {
+    margin-bottom: 15px;
   }
 
   .main-nav ul {
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .main-nav li {
-    margin: 10px 0;
+    margin: 5px 10px;
   }
 
   .contact-info {
@@ -1770,10 +1325,6 @@ ul {
 
   .contact-info span {
     margin: 5px 10px;
-  }
-
-  .banner-content h1 {
-    font-size: 36px;
   }
 
   .footer-content {
@@ -1788,667 +1339,29 @@ ul {
   .social-links {
     margin-top: 15px;
   }
-
-  .about-text h2 {
-    font-size: 28px;
-  }
-
-  .newsletter-text h2 {
-    font-size: 24px;
-  }
-
-  .post-card {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  .news-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 576px) {
-  .index-right-bottom {
+  .article-card {
+    flex-direction: column;
+  }
+
+  .article-thumbnail {
+    width: 100%;
+    height: 150px;
+  }
+
+  .banner-sidebar-bottom {
     flex-direction: column;
     height: auto;
     gap: 15px;
   }
 
-  .index-left-block {
-    height: 200px;
-  }
-
-  .index-right-top {
+  .banner-small {
     height: 180px;
   }
 
-  .index-bottom-block {
-    height: 150px;
+  .banner-sidebar-top {
+    height: 180px;
   }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .experts-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .post-card {
-    flex: 0 0 90%;
-  }
-} /* Phần bài viết liên quan */
-.related-posts {
-  padding: 80px 0 40px;
-  background-color: #f9f9f9;
-}
-
-.posts-slider {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  overflow-x: hidden;
-  padding: 10px 0 30px;
-  transition: transform 0.5s ease;
-}
-
-.post-card {
-  flex: 0 0 calc(25% - 15px);
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.post-card:hover {
-  transform: translateY(-5px);
-}
-
-.post-image {
-  overflow: hidden;
-}
-
-.post-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.post-card:hover .post-image img {
-  transform: scale(1.05);
-}
-
-.post-content {
-  padding: 20px;
-}
-
-.post-content h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-weight: 600;
-  height: 65px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-.post-navigation {
-  position: absolute;
-  top: -60px;
-  right: 0;
-  display: flex;
-  gap: 10px;
-}
-
-.nav-prev,
-.nav-next {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.nav-prev:hover,
-.nav-next:hover {
-  background-color: #1e73be;
-  color: #fff;
-  border-color: #1e73be;
-}
-
-/* Phần tin tức pháp lý */
-.legal-news {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.news-card {
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.news-card:hover {
-  transform: translateY(-5px);
-}
-
-.news-image {
-  overflow: hidden;
-}
-
-.news-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.news-card:hover .news-image img {
-  transform: scale(1.05);
-}
-
-.news-content {
-  padding: 20px;
-}
-
-.news-content h3 {
-  font-size: 16px;
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-weight: 600;
-  height: 65px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-} /* Phần đăng ký bản tin */
-.newsletter-signup {
-  padding: 0;
-  margin: 60px 0;
-}
-
-.newsletter-content {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #1e73be, #4a8cca);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.newsletter-image {
-  flex: 1;
-  max-width: 40%;
-  position: relative;
-}
-
-.newsletter-image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.newsletter-text {
-  flex: 1;
-  padding: 50px;
-  color: #fff;
-  text-align: left;
-}
-
-.newsletter-text h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-signup {
-  display: inline-block;
-  background-color: #fff;
-  color: #1e73be;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-signup i {
-  margin-left: 8px;
-}
-
-.btn-signup:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Chuyên gia */
-.experts {
-  padding: 80px 0;
-}
-
-.experts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.expert-item {
-  background-color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.expert-image img {
-  width: 100%;
-  height: auto;
-}
-
-.expert-item h3 {
-  margin: 20px 0 5px;
-  font-size: 20px;
-}
-
-.expert-item p {
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.expert-contact {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-}
-
-.expert-contact a {
-  margin: 0 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-}
-
-.expert-contact a:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-} /* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-/* Top Bar */
-.top-bar {
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 8px 0;
-  font-size: 14px;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.contact-info span {
-  margin-left: 20px;
-}
-
-.contact-info i {
-  margin-right: 5px;
-}
-
-/* Header */
-.header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 100;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.main-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav li {
-  margin-left: 20px;
-  position: relative;
-}
-
-.main-nav a {
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #1e73be; /* Màu xanh da trời khi hover */
-}
-
-.language img {
-  width: 20px;
-  height: auto;
-  margin-left: 5px;
-}
-
-/* Hero Banner */
-.hero-banner {
-  position: relative;
-  height: 600px;
-  background-image: url("../images/banner.jpg"); /* Cần thay thế bằng ảnh thật */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.banner-content {
-  position: relative;
-  z-index: 10;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.banner-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #1e73be; /* Màu xanh da trời */
-}
-
-.banner-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.btn-contact {
-  display: inline-block;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.btn-contact:hover {
-  background-color: #1860a0; /* Màu xanh đậm hơn khi hover */
-}
-
-/* Phần giới thiệu công ty */
-.about-company {
-  padding: 80px 0;
-  background-color: #fff;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.about-text {
-  flex: 1;
-}
-
-.about-subtitle {
-  color: #1e73be;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  position: relative;
-  padding-left: 40px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.about-subtitle:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 2px;
-  background-color: #1e73be;
-}
-
-.about-text h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  color: #333;
-}
-
-.about-text p {
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.btn-about {
-  display: inline-block;
-  background-color: #1e73be;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-about:hover {
-  background-color: #155fa1;
-  transform: translateY(-3px);
-}
-
-.about-image {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.experience-badge {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 120px;
-  height: 120px;
-  background-color: #555;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
-
-.experience-badge .years {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.experience-badge .text {
-  font-size: 12px;
-  max-width: 80px;
-  line-height: 1.2;
-  margin-top: 5px;
-}
-
-/* Dịch vụ "Chúng tôi cung cấp những gì" */
-.services {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  color: #1e73be; /* Màu xanh da trời */
-  margin-bottom: 15px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background-color: #1e73be; /* Màu xanh da trời */
-}
-
-.section-title p {
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.3s;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-icon {
-  color: #1e73be; /* Màu xanh da trời */
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.service-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #1e73be; /* Màu xanh da trời */
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  font-size: 12px;
-}
-
-.service-corner i {
-  position: relative;
-  left: 5px;
-  top: 5px;
 }
