@@ -52,7 +52,16 @@
                     <nav class="main-nav">
                         <ul>
                             <li><a href="#">VỀ LUẬT LTV</a></li>
-                            <li><a href="#">ĐỘI NGŨ LUẬT SƯ</a></li>
+                            <li class="has-submenu">
+                                <a href="#"
+                                    >ĐỘI NGŨ LUẬT SƯ
+                                    <i class="fas fa-chevron-down"></i
+                                ></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Nhân Sự Pháp Lý</a></li>
+                                    <li><a href="#">Nhân Sự Vận Hành</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">DỊCH VỤ</a></li>
                             <li><a href="#">LĨNH VỰC</a></li>
                             <li><a href="#">KIẾN THỨC</a></li>
@@ -85,6 +94,9 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </header>
@@ -851,6 +863,56 @@
 
                 // Listen for window resize
                 window.addEventListener("resize", updateSlider);
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                // Existing slider code...
+                const slider = document.querySelector(".posts-slider");
+                if (slider) {
+                    // Your existing slider code...
+                }
+
+                // Mobile menu toggle
+                const menuToggle = document.querySelector(".menu-toggle");
+                const body = document.body;
+
+                if (menuToggle) {
+                    menuToggle.addEventListener("click", function () {
+                        body.classList.toggle("mobile-menu-active");
+                    });
+
+                    // Close menu when clicking outside
+                    document.addEventListener("click", function (e) {
+                        if (
+                            body.classList.contains("mobile-menu-active") &&
+                            !e.target.closest(".main-nav") &&
+                            !e.target.closest(".menu-toggle")
+                        ) {
+                            body.classList.remove("mobile-menu-active");
+                        }
+                    });
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                // Existing code here...
+
+                // Handle submenu on mobile
+                const submenus = document.querySelectorAll(".has-submenu > a");
+
+                submenus.forEach(function (submenu) {
+                    submenu.addEventListener("click", function (e) {
+                        if (window.innerWidth <= 992) {
+                            e.preventDefault();
+                            const parent = this.parentElement;
+                            const subList = this.nextElementSibling;
+
+                            // Toggle active class
+                            parent.classList.toggle("active");
+                            subList.classList.toggle("active");
+                        }
+                    });
+                });
             });
         </script>
     </body>
